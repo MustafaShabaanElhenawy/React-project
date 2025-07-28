@@ -61,34 +61,41 @@ export default function Portfolio() {
         </div>
       )}
 
-      <div className="bg-[#2C3E50] text-center text-white flex items-center justify-around py-24">
-        <div className="ml-36">
-          <h3 className="font-semibold text-[28px]">LOCATION</h3>
-          <p>2215 John Daniel Drive</p>
-          <p className="pt-2">Clark, MO 65243</p>
-        </div>
-
-        <div className="ml-20">
-          <h3 className="font-semibold text-[28px]">AROUND THE WEB</h3>
-          <div className="flex items-center justify-center gap-2 pt-4">
-            <i className="fa-brands fa-facebook border text-[16px] border-white rounded-full p-2"></i>
-            <i className="fa-brands fa-twitter border text-[16px] border-white rounded-full p-2"></i>
-            <i className="fa-brands fa-linkedin-in border text-[16px] border-white rounded-full p-2"></i>
-            <i className="fa-solid fa-globe border text-[16px] border-white rounded-full p-2"></i>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="font-semibold text-[28px]">ABOUT FREELANCER</h3>
-          <p className="pt-2 w-[90%] text-center">
-            Freelance is a free to use, licensed Bootstrap theme created by Route
-          </p>
+<footer>
+  {/* القسم الرئيسي للـ Footer */}
+  <div className="bg-[#2C3E50] text-white text-center py-12 md:py-24 px-4 md:px-32">
+    {/* استعمال Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {/* Location */}
+      <div>
+        <h3 className="font-semibold text-[22px] md:text-[28px]">LOCATION</h3>
+        <p>2215 John Daniel Drive</p>
+        <p className="pt-2">Clark, MO 65243</p>
+      </div>
+      {/* Around the Web */}
+      <div>
+        <h3 className="font-semibold text-[22px] md:text-[28px]">AROUND THE WEB</h3>
+        <div className="flex items-center justify-center gap-4 pt-4">
+          <i className="fa-brands fa-facebook border border-white rounded-full p-2 text-[18px]"></i>
+          <i className="fa-brands fa-twitter border border-white rounded-full p-2 text-[18px]"></i>
+          <i className="fa-brands fa-linkedin-in border border-white rounded-full p-2 text-[18px]"></i>
+          <i className="fa-solid fa-globe border border-white rounded-full p-2 text-[18px]"></i>
         </div>
       </div>
-
-      <div className="py-7 bg-[#1A252F]">
-        <p className="text-center text-white">Copyright © Your Website 2021</p>
+      {/* About Freelancer */}
+      <div>
+        <h3 className="font-semibold text-[22px] md:text-[28px]">ABOUT FREELANCER</h3>
+        <p className="pt-2 w-full md:w-[90%] text-center mx-auto">
+          Freelance is a free to use, licensed Bootstrap theme created by Route
+        </p>
       </div>
+    </div>
+  </div>
+  {/* شريط النسخ */}
+  <div className="py-4 bg-[#1A252F]">
+    <p className="text-center text-white">Copyright © Your Website 2021</p>
+  </div>
+</footer>
     </>
   );
 }
